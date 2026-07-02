@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideDine - Nutrición Emocional Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>VideDine <span></span></h1>
+        <p>Tu comida ideal para equilibrar tu mente y energía</p>
+    </header>
+
+    <main>
+        <section class="seccion-animos">
+            <h2>¿Cómo te sientes en este momento?</h2>
+            <div class="botones-animo">
+                <button class="btn-animo" data-animo="feliz">😊 Feliz</button>
+                <button class="btn-animo" data-animo="estresado">🤯 Estresado</button>
+                <button class="btn-animo" data-animo="cansado">😴 Cansado</button>
+                <button class="btn-animo" data-animo="triste">😢 Triste</button>
+            </div>
+        </section>
+
+        <section class="Herramientas-filtro" id="seccion-filtros">
+            <div class="buscador-caja">
+                <input type="text" id="buscador" placeholder="🔍 Buscar ingrediente o plato...">
+            </div>
+            <div class="filtros-categoria">
+                <button class="btn-filtro activo" data-filtro="todos">Todos</button>
+                <button class="btn-filtro" data-filtro="desayuno">🍳 Desayuno</button>
+                <button class="btn-filtro" data-filtro="almuerzo">🍲 Almuerzo/Cena</button>
+                <button class="btn-filtro" data-filtro="snack">🍿 Snacks</button>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="titulo-resultados">Selecciona un estado de ánimo arriba</h3>
+            <div id="resultado-comidas" class="contenedor-comidas"></div>
+        </section>
+    </main>
+
+    <div id="modal-receta" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <img id="modal-imagen" src="" alt="">
+            <h4>Ingredientes:</h4>
+            <ul id="modal-ingredientes"></ul>
+            <h4>Pasos de preparación:</h4>
+            <p id="modal-instrucciones"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
